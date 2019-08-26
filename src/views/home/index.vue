@@ -24,23 +24,22 @@
 				<input type="text" />
 				<div class="mz">
 					<a href="">张韶涵</a>
-					<a href="">篮球世界杯</a>
-					<a href="">初音未来</a>
-					<a href="">张杰</a>
+					<a href="">城市娱乐家</a>
+					<a href="">刘老根</a>
 					<a href="">王力宏</a>
+					<a href="">费玉清</a>
 				</div>
 				<div id="container">
 				            <div id="list" style="left: -600px;">
-				                <img src="../../assets/logo.png" alt="1" />
-				                <img src="" alt="2" />
-				                <img src="" alt="3" />
-				                <img src="" alt="4" />
-				                <img src="" alt="5" />
-				                <img src="" alt="6" />
-								<img src="" alt="7" />
-								<img src="" alt="8" />
-								<img src="" alt="9" />
-								<img src="" alt="10" />
+				                <img src="../../assets/img/dqws.png" alt="1" />
+				                <img src="../../assets/img/kxq.png" alt="2" />
+				                <img src="../../assets/img/lg.png" alt="3" />
+				                <img src="../../assets/img/lqsjb.png" alt="4" />
+				                <img src="../../assets/img/lzhh.png" alt="5" />
+				                <img src="../../assets/img/ych.png" alt="6" />
+								<img src="../../assets/img/yl.png" alt="7" />
+								<img src="../../assets/img/yhzq.png" alt="8" />
+								
 				            </div>
 				            <div id="buttons">
 				                <span index="1" class="on"></span>
@@ -51,8 +50,7 @@
 								<span index="6"></span>
 								<span index="7"></span>
 								<span index="8"></span>
-								<span index="9"></span>
-								<span index="10"></span>
+								
 				            </div>
 				           <a href="javascript:;" id="prev" class="arrow">&lt;</a>
 				            <a href="javascript:;" id="next" class="arrow">&gt;</a>
@@ -93,7 +91,10 @@
 						<img src="../../assets/img/wudao.png" alt="">
 						<a href="">舞蹈芭蕾</a>
 					</li>
-					<li><a href="">暑期大促</a></li>
+					<li>
+						<img src="../../assets/img/TB1IIawe9WD3KVjSZSgXXcCxVXa-84-84.png_q80.jpg_.webp" alt="">
+						<a href="">暑期大促</a>
+					</li>
 					<li>
 						<img src="../../assets/img/bawangpiao.png" alt="">
 						<a href="">霸王票</a>
@@ -116,12 +117,19 @@
 					<a href="">精选榜</a>
 					<a href="">人气榜</a>
 					<a href="">上新榜</a>
-					<div class="zj"></div>
-					<a href="" class="ly">未来有你.初音未来2019中...</a>
-					<div class="cs"></div>
-					<a href="" class="bl">法语原版音乐剧《巴黎圣母院》</a>
-					<div class="yb"></div>
+					<div class="zj">
+						<img src="../../assets/img/178232_n.webp" alt="">
+					</div>
+					<a href="" class="ly">开心麻花爆笑舞台剧《牢友记》</a>
+					<div class="cs">
+						<img src="../../assets/img/cywl.png" alt="">
+					</div>
+					<a href="" class="bl">未来有你.初音未来2019中...</a>
+					<div class="yb">
+						<img src="../../assets/img/gjdjy.png" alt="">
+					</div>
 					<a href="" class="jy">国家大剧院2019国庆音...</a>
+					<div ></div>
 				</div>
 				
         </f7-block>
@@ -184,7 +192,7 @@ export default {
 	        prev.onclick = function() {
 	                index = index - 1;
 	                if(index < 1) {
-	                    index = 10;
+	                    index = 8;
 	                }
 	                buttonShow();
 	                animate(600);
@@ -192,7 +200,7 @@ export default {
 	            /*下一步*/
 	        next.onclick = function() {
 	                index = index + 1;
-	                if(index > 10) {
+	                if(index > 8) {
 	                    index = 1;
 	                }
 	                buttonShow();
@@ -238,9 +246,22 @@ export default {
 
 
 <style>
-	
-	
-	           #container {
+				* {
+	                margin: 0;
+	                padding: 0;
+	                text-decoration: none;
+	            }
+	            
+	            body {
+	                padding: 20px;
+	            }
+	            
+				.mz a{
+					display:inline-block;
+					margin-left:15px;
+					text-align: center;
+				}
+	            #container {
 	                position: relative;
 	                width: 340px;
 	                height: 200px;
@@ -251,25 +272,23 @@ export default {
 	            #list {
 	                position: absolute;
 	                z-index: 1;
-	                width:340px;
-	                height: 200px;
+	                width: 4200px;
+	                height: 400px;
 	            }
 	            
 	            #list img {
-	                /* float: left; */
-	                width: 200px;
+	                float: left;
+	                width:400px;
 	                height: 200px;
-					
 	            }
 	            
 	            #buttons {
 	                position: absolute;
-	                left: 100px;
-	                bottom:10px;
+	                left:100px;
+	                bottom: 20px;
 	                z-index: 2;
 	                height: 10px;
-	                width: 200px;
-					display: inline-block;
+	                width: 150px;
 	            }
 	            
 	            #buttons span {
@@ -281,7 +300,7 @@ export default {
 	                border-radius: 50%;
 	                background: #333;
 	                cursor: pointer;
-					
+					display: inline-block;
 	            }
 	            
 	            #buttons .on {
@@ -318,14 +337,14 @@ export default {
 	            
 	            #next {
 	                right: 20px;
-	            } 
-	 .swiper-wrapper{
-		display:inline-block;
-		height:800px;
-		width:800px;
-		z-index: 1;
-	}
-	 ul {		
+	            }
+				.swiper-wrapper{
+					display:inline-block;
+					height:800px;
+					width:800px;
+					z-index: 1;
+				}
+			ul{		
 		 
 	          list-style:none;
 	        }
@@ -413,6 +432,10 @@ export default {
 				display:block;
 				margin-top:10px;
 			}
+			.zj img{
+				width:100px;
+				height:130px;
+			}
 			.ly{
 				display:inline-block;
 				font-size:10px;
@@ -427,6 +450,10 @@ export default {
 				text-align: center;
 				margin-left:120px;
 				margin-top:-174px;
+			}
+			.cs img{
+				width:100px;
+				height:130px;
 			}
 			.bl{
 				display:inline-block;
@@ -443,15 +470,16 @@ export default {
 				margin-left:240px;
 				margin-top:-173px;
 			}
+			.yb img{
+				width:100px;
+				height:130px;
+			}
 			.jy{
 				display:inline-block;
 				font-size:10px;
 				text-align: center;
 				margin-left:260px;
 				margin-top:10px;
-			}
-			
-			
-			
+			}	
 </style>
 
