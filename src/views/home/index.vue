@@ -468,7 +468,7 @@ export default {
 				display:block;
 				border:1px solid #ccc;
 				margin-left:240px;
-				margin-top:-173px;
+				margin-top:-172px;
 			}
 			.yb img{
 				width:100px;
