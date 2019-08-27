@@ -1,6 +1,6 @@
 
 # 仿大麦App
-
+### 
 ## 技术栈
 ```
 vue+vue cli+vuex+vue-axios+webpack+ES6+svg
@@ -21,4 +21,63 @@ framework7
 ## 手机实测安装点击下方链接下载:
 
 https://service.dcloud.net.cn/build/download/64a95d70-c811-11e9-8fac-6f0eb65e2dde
-	
+
+## 项目结构
+
+```
+├── LICENSE
+├── README.md
+├── dist
+│   ├── views
+│   │   ├── find
+│   │   │   ├── index.vue
+│   │   │   
+│   │   ├── home
+│   │   │   ├── index.vue
+│   │   │   
+│   │   ├── me
+│   │   │   ├── index.vue
+│   │   │  
+│   │   ├── ticketholder
+│   │   │   ├── index.vue
+│   │   │   
+│   │   ├── whole
+│   │   │   ├── index.vue
+│   │   │            
+│   ├──pages
+│   │   ├──
+│   │   └──
+│   │       ├── about.vue
+│   │       ├── dynamic.vue
+│   │       ├── form.vue
+│   │       ├── home.vue
+│   │       ├── not-found.vue
+│   │       ├── pancl-left.vue
+│   │     
+│   ├──assets
+│   │   ├── 	
+│   │   │   └── img
+│   │   └──	
+│   │       └── logo.png
+│   └── 
+│       ├──components
+│       │   ├──HelloWorld.vue
+│       │   │   └── 
+│      
+├── app.js
+├── main.js
+├── not-found.vue
+├── routes.js
+
+ |—— store.js
+ |—— .browserslistrc
+ |—— .gitignore
+ |—— babel.config.js
+ |—— index.html
+ |—— package.json 
+ |—— package-lock.json 
+ |—— postcss.config.js
+ |—— README.md
+ |—— vue.config.js
+
+```
