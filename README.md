@@ -2,15 +2,15 @@
 # 仿大麦App
 
 ##技术栈
-
+```
 vue+vue cli+vuex+vue-axios+webpack+ES6+svg
-
+```
 ##框架
-
+```
 framework
-
+```
 ##运用的插件
-
+```
 	vue/cli
 	```
 	vue/cli-pligin-babel
@@ -19,6 +19,6 @@ framework
   	```
 
 ##手机实测安装点击下方链接下载:
-
+```
 https://service.dcloud.net.cn/build/download/64a95d70-c811-11e9-8fac-6f0eb65e2dde
-	
+```	
