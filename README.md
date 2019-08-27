@@ -1,29 +1,24 @@
-# damai
 
-## Project setup
+# 仿大麦App
 ```
-npm install
-```
+##技术栈
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+vue+vue cli+vuex+vue-axios+webpack+ES6+svg
 
-### Compiles and minifies for production
-```
-npm run build
-```
+##框架
 
-### Run your tests
-```
-npm run test
-```
+framework
 
-### Lints and fixes files
-```
-npm run lint
-```
+##运用的插件
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+	vue/cli
+	```
+	vue/cli-pligin-babel
+	```
+	vue-cli-plugin-framework7
+  	```
+
+## 手机实测安装点击下方链接下载:
+
+https://service.dcloud.net.cn/build/download/64a95d70-c811-11e9-8fac-6f0eb65e2dde
+	
