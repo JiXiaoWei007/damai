@@ -1,9 +1,9 @@
 
 # ·Â´óÂóApp
-### 
+
 ## ¼¼ÊõÕ»
 ```
-vue+vue cli+vuex+vue-axios+webpack+ES6+svg
+vue+vuecli+vuex+vue-axios+webpack+ES6+svg
 ```
 ## ¿ò¼Ü
 ```
@@ -27,7 +27,6 @@ https://service.dcloud.net.cn/build/download/64a95d70-c811-11e9-8fac-6f0eb65e2dd
 
 ```
 ©À©¤©¤ LICENSE
-©À©¤©¤ README.md
 ©À©¤©¤ dist
 ©¦   ©À©¤©¤ views
 ©¦   ©¦   ©À©¤©¤ find
