@@ -64,20 +64,5 @@ https://service.dcloud.net.cn/build/download/64a95d70-c811-11e9-8fac-6f0eb65e2dd
 ©¦       ©¦   ©À©¤©¤HelloWorld.vue
 ©¦       ©¦   ©¦   ©¸©¤©¤ 
 ©¦      
-©À©¤©¤ app.js
-©À©¤©¤ main.js
-©À©¤©¤ not-found.vue
-©À©¤©¤ routes.js
-
- |¡ª¡ª store.js
- |¡ª¡ª .browserslistrc
- |¡ª¡ª .gitignore
- |¡ª¡ª babel.config.js
- |¡ª¡ª index.html
- |¡ª¡ª package.json 
- |¡ª¡ª package-lock.json 
- |¡ª¡ª postcss.config.js
- |¡ª¡ª README.md
- |¡ª¡ª vue.config.js
 
 ```
