@@ -21,7 +21,7 @@
         <f7-block>
 			<div class="bjt">
 				<a class="bj">北京</a>
-				<input type="text" />
+				<input type="text"/>
 				<div class="mz">
 					<a href="">张韶涵</a>
 					<a href="">城市娱乐家</a>
@@ -31,18 +31,19 @@
 				</div>
 				<div id="container">
 				            <div id="list" style="left: -600px;">
-				                <img src="../../assets/img/dqws.png" alt="1" />
+								<img src="../../assets/img/dqls.png" alt="1" />
+				                <img src="../../assets/img/dqls.png" alt="1" />
 				                <img src="../../assets/img/kxq.png" alt="2" />
 				                <img src="../../assets/img/lg.png" alt="3" />
 				                <img src="../../assets/img/lqsjb.png" alt="4" />
 				                <img src="../../assets/img/lzhh.png" alt="5" />
-				                <img src="../../assets/img/ych.png" alt="6" />
+				                <img src="../../assets/img/rxq.png" alt="6" />
 								<img src="../../assets/img/yl.png" alt="7" />
 								<img src="../../assets/img/yhzq.png" alt="8" />
-								
+								<img src="../../assets/img/yhzq.png" alt="8" />
 				            </div>
 				            <div id="buttons">
-				                <span index="1" class="on"></span>
+				                <span index="1"></span>
 				                <span index="2"></span>
 				                <span index="3"></span>
 				                <span index="4"></span>
@@ -55,11 +56,11 @@
 				           <a href="javascript:;" id="prev" class="arrow">&lt;</a>
 				            <a href="javascript:;" id="next" class="arrow">&gt;</a>
 				 </div>
-					
+					 
 		</div>
 				<ul class="xm">
 					<li>
-						<img src="../../assets/img/yanchanghui_03.png" alt="">
+						<img src="../../assets/img/ych.png" alt="">
 						<a href="">演唱会</a>
 					</li>
 					<li>
@@ -104,7 +105,9 @@
 				<div class="hz">
 					<p class="bo">抢票播报站</p>
 					<div class="qp">
-						<a href=""></a>
+						<a href="">
+							<img src="../../assets/img/agt.png" alt="">
+						</a>
 					</div>
 					<div class="dz">
 						<a href="">【北京】同城乐享卡-北京站</a></br>
@@ -114,9 +117,18 @@
 					</div>
 				</div>
 				<div class="dhl">
-					<a href="">精选榜</a>
+					<!-- <a href="">精选榜</a>
 					<a href="">人气榜</a>
-					<a href="">上新榜</a>
+					<a href="">上新榜</a> -->
+					<f7-navbar>
+					  <f7-nav-left>
+					    <f7-link>精选榜</f7-link>
+					  </f7-nav-left>
+					  <f7-nav-title>人气榜</f7-nav-title>
+					  <f7-nav-left>
+					    <f7-link>上新榜</f7-link>
+					  </f7-nav-left>
+					</f7-navbar>
 					<div class="zj">
 						<img src="../../assets/img/178232_n.webp" alt="">
 					</div>
@@ -129,7 +141,15 @@
 						<img src="../../assets/img/gjdjy.png" alt="">
 					</div>
 					<a href="" class="jy">国家大剧院2019国庆音...</a>
-					<div ></div>
+					<div class="jchm">
+						<img src="../../assets/img/blh.png" alt="">
+					</div>
+					<div class="xs">
+						<img src="../../assets/img/xhxs.png" alt="">
+					</div>
+					<div class="fg"> 
+						<img src="../../assets/img/fgys.png" alt="">
+					</div>
 				</div>
 				
         </f7-block>
@@ -137,10 +157,8 @@
     </f7-tabs>
   </f7-page>
 </template>
-		<link rel="stylesheet" type="" href=""/>
-		<script src="jquery.js"></script>
-		<script type="text/javascript" src="js.js"></script>
-
+		
+	
 <script>
   import { f7Navbar, f7Page, f7Block, f7Tabs, f7Tab, f7Link, f7Toolbar, f7NavRight } from 'framework7-vue';
 export default {
@@ -167,9 +185,9 @@ export default {
 	            var newLeft = parseInt(list.style.left) + offset;
 	            list.style.left = newLeft + 'px';
 	            if(newLeft < -3000) {
-	                list.style.left = -600 + 'px';
+	                list.style.left = -340 + 'px';
 	            }
-	            if(newLeft > -600) {
+	            if(newLeft > -340) {
 	                list.style.left = -3000 + 'px';
 	            }
 	        }
@@ -195,7 +213,7 @@ export default {
 	                    index = 8;
 	                }
 	                buttonShow();
-	                animate(600);
+	                animate(340);
 	            }
 	            /*下一步*/
 	        next.onclick = function() {
@@ -204,7 +222,7 @@ export default {
 	                    index = 1;
 	                }
 	                buttonShow();
-	                animate(-600);
+	                animate(-340);
 	            }
 	            /*自动循环播放*/
 	        var timer;
@@ -255,7 +273,14 @@ export default {
 	            body {
 	                padding: 20px;
 	            }
-	            
+				.bjt{
+					width:100%;
+					height:260px;
+					background-color:rgb(45,78,130);
+				}
+	            .bj{
+					color:pink;
+				}
 				.mz a{
 					display:inline-block;
 					margin-left:15px;
@@ -263,7 +288,7 @@ export default {
 				}
 	            #container {
 	                position: relative;
-	                width: 340px;
+	                width:341px;
 	                height: 200px;
 	                border: 3px solid #333;
 	                overflow: hidden;
@@ -272,14 +297,14 @@ export default {
 	            #list {
 	                position: absolute;
 	                z-index: 1;
-	                width: 4200px;
+	                width: 4000px;
 	                height: 400px;
 	            }
 	            
 	            #list img {
 	                float: left;
-	                width:400px;
-	                height: 200px;
+	                width:340px;
+	                height:200px;
 	            }
 	            
 	            #buttons {
@@ -303,9 +328,9 @@ export default {
 					display: inline-block;
 	            }
 	            
-	            #buttons .on {
+	           /* #buttons .on {
 	                background: orangered;
-	            }
+	            } */
 	            
 	            .arrow {
 	                position: absolute;
@@ -355,20 +380,20 @@ export default {
 	        }
 			.xm {
 				width:340px;
-				height:100px;
-				
+				height:150px;
+				background-color: white;
 			}
 			.xm li{
 				display: inline-block;
 			}
 			.xm img{
-				width:30px;
-				height:30px;
+				width:40px;
+				height:40px;
 				margin-left:-50px;
-				margin-top:5px;
+				margin-top:-5px;
 			}
 			.xm a{
-				height:50px;
+				height:70px;
 				width:65px;
 				display: inline-block;
 				float: left;
@@ -376,7 +401,7 @@ export default {
 				line-height: 80px;
 			}
 			.hz{
-				border:1px solid #ccc;
+				background-color:white;
 				width:340px;
 				height:100px;
 				margin-top:20px;
@@ -387,10 +412,14 @@ export default {
 			.qp{
 				width:60px;
 				height:60px;
-				border:1px solid #ccc;
+				background-color:white;
 				float: left;
 				margin-left:5px;
 				margin-top:-12px;
+			}
+			.qp img{
+				width:60px;
+				height:60px;
 			}
 			.dz{
 				width:260px;
@@ -481,5 +510,37 @@ export default {
 				margin-left:260px;
 				margin-top:10px;
 			}	
+			.jchm{
+				width:100px;
+				height:100px;
+				border:1px solid #ccc;
+				float: left;
+			}
+			.jchm img{
+				width:100px;
+				height:100px;
+			}
+			.xs{
+				width:100px;
+				height:100px;
+				border:1px solid #ccc;
+				float: left;
+				margin-left:20px;
+			}
+			.xs img{
+				width:100px;
+				height:100px;
+			}
+			.fg{
+				width:100px;
+				height:100px;
+				border:1px solid #ccc;
+				float:right;
+				margin-left:18px;
+			}
+			.fg img{
+				width:100px;
+				height:100px;
+			}
 </style>
 

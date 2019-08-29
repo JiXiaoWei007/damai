@@ -58,6 +58,15 @@
 			 <p class="cyjg">￥590</p>
 			 <p class="cypqj">起</p>
 		 </a>
+		 <a class="mh">
+			 <a href="">
+				 <img src="../../assets/img/cqmyg.png" alt="">
+			 </a>
+			 <p class="">开心麻花2019爆笑舞台剧《窗前不止明月光》</p>
+			 <p class="">2019.09.20-09.22</p>
+			 <p class="">北京|北京展览馆剧场</p>
+			 <p></p>
+		 </a>	
 	</f7-block>
     
   
@@ -65,7 +74,9 @@
   </f7-page>
 </template>
 <script>
-export default {}
+ export default {
+ 	
+}
 </script>
 <style>
 	      .top{
@@ -321,5 +332,13 @@ export default {}
 	.cypqj{
 		margin-left:210px;
 		margin-top:-50px;
+	}
+	.mh{
+		width:100%;
+		height:180px;
+	}
+	.mh img{
+		width:120px;
+		height:180px;
 	}
 </style>
