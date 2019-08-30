@@ -62,10 +62,14 @@
 			 <a href="">
 				 <img src="../../assets/img/cqmyg.png" alt="">
 			 </a>
-			 <p class="">开心麻花2019爆笑舞台剧《窗前不止明月光》</p>
-			 <p class="">2019.09.20-09.22</p>
-			 <p class="">北京|北京展览馆剧场</p>
-			 <p></p>
+			 <p class="wtj">开心麻花2019爆笑舞台剧</br>《窗前不止明月光》</p>
+			 <p class="bfsj">2019.09.20-09.22</p>
+			 <p class="ddi">北京|北京展览馆剧场</p>
+			 <div class="top3">开心麻花必看TOP3</div>
+			 <p class="mp">套票</p>
+			 <p class="kxz">可选坐</p>
+			 <p class="sz">￥80</p>
+			 <p class="jgq">起</p>
 		 </a>	
 	</f7-block>
     
@@ -327,7 +331,7 @@
 		color: #ff1268;
 		font-size: 25px;
 		margin-left:140px;
-		margin-top:40px;
+		margin-top:30px;
 	}
 	.cypqj{
 		margin-left:210px;
@@ -340,5 +344,60 @@
 	.mh img{
 		width:120px;
 		height:180px;
+		margin-top:10px;
+	}
+	.wtj{
+		font-size: 16px;
+		margin-left:140px;
+		margin-top:-190px;
+	}
+	.bfsj{
+		display: inline;
+		margin-left:140px;
+		margin-top:-20px;
+	}
+	.ddi{
+		margin-top:-5px;
+		margin-left:140px;
+	}
+	.top3{
+		width:100px;
+		font-size: 10px;
+		border:1px solid #ccc;
+		color:white;
+		margin-left:140px;
+		border-radius:5px;
+		background-color:#DBA901;
+		text-align: center;
+	}
+	.mp{
+		width:40px;
+		border:1px solid #ff1268;
+		border-radius:5px;
+		margin-left:243px;
+		margin-top:-15px;
+		font-size: 10px;
+		color:#ff1268;
+		text-align: center;
+	}
+	.kxz{
+		width:40px;
+		margin-left:290px;
+		margin-top:-25px;
+		color:#8000FF;
+		border:1px solid #8000FF;
+		text-align: center;
+		border-radius: 2px;
+		font-size: 10px;
+	}
+	.sz{
+		font-size: 25px;
+		color:#ff1268;
+		margin-left:140px;
+	}
+	.jgq{
+	
+		margin-left:195px;
+		margin-top:-50px;
 	}
 </style>
